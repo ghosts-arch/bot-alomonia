@@ -1,0 +1,1 @@
+from .delete_advent_calendar_box import DeleteAdventCalendarBoxView
