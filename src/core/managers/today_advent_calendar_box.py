@@ -31,7 +31,7 @@ class TodayAdventCalendarBoxManager(Manager):
 
         await advent_calendar_channel.send(
             embed=Embed(
-                title=f"Jour {today_advent_calendar_box.day} du calendrier de l'avant de Alomnia",
+                title=f"Jour {today_advent_calendar_box.day} du calendrier de l'avant de Alomonia",
                 description=f"Voilà l'indice du jour : || {today_advent_calendar_box.clues} ||. \nA vous de jouer !",
             )
         )
