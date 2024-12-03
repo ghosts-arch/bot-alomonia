@@ -41,6 +41,7 @@ class LuneaMoon(discord.Client):
         self.config = load_config(path=config_path)
         self.cooldowns = []
         self.loop = asyncio.get_event_loop()
+        self.allowed_mentions = discord.AllowedMentions(everyone=True)
 
     async def on_ready(self):
 

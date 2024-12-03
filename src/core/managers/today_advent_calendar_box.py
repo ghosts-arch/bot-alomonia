@@ -30,8 +30,9 @@ class TodayAdventCalendarBoxManager(Manager):
             raise Exception("birthdays_channel is not a TextChannel")
 
         await advent_calendar_channel.send(
+            content="@everyone",
             embed=Embed(
                 title=f"Jour {today_advent_calendar_box.day} du calendrier de l'avant de Alomonia",
                 description=f"Voilà l'indice du jour : || {today_advent_calendar_box.clues} ||. \nA vous de jouer !",
-            )
+            ),
         )
