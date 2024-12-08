@@ -58,7 +58,9 @@ class LuneaMoon(discord.Client):
         test_channel = self.get_channel(self.config.get("TEST_CHANNEL_ID"))
 
         if isinstance(test_channel, discord.TextChannel):
-            await test_channel.send(f"{self.user} ready.")
+            await test_channel.send(
+                f"{self.user} ready in {self.config.get("MODE")} mode."
+            )
 
     async def on_interaction(self, interaction: discord.Interaction):
 
