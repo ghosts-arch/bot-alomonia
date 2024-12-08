@@ -46,7 +46,7 @@ class TodayAdventCalendarBoxManager(Manager):
             case "_":
                 print("error : unvalid category")
                 return
-        emotes = " ".join([f"{c}" for c in today_advent_calendar_box.clues])
+        emotes = " ".join([f"||{c}||" for c in today_advent_calendar_box.clues])
         await advent_calendar_channel.send(
             content="@everyone",
             embed=Embed(
