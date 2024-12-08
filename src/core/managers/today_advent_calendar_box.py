@@ -51,7 +51,7 @@ class TodayAdventCalendarBoxManager(Manager):
             content="@everyone",
             embed=Embed(
                 title=f"Jour {today_advent_calendar_box.day} du calendrier de l'avant de Alomonia",
-                description=f"Voilà les indices du jour :\n\n\t Catégorie : || {category} || \n\n Emojis : {' '.join([f'||{c}||' for c in list(today_advent_calendar_box.clues)])}\n\nA vous de jouer !",
+                description=f"Voilà les indices du jour :\n\n\t Catégorie : || {category} || \n\n Emojis : {' '.join([f"||{c}||" for c in list(today_advent_calendar_box.clues)])}\n\nA vous de jouer !",
             ).set_footer(
                 text="Les énigmes du calendrier de l'avent sont générées par ChatGPT."
             ),
